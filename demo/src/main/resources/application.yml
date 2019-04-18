@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  output:
+    ansi:
+      enabled: always
+
+mybatis:
+  mapper-locations: mybatis/**/*Mapper.xml
+  typeAliasesPackage: cn.lger.plugin.entity
+  config-location: classpath:mybatis/config.xml
+

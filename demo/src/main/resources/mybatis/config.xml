@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--开启驼峰式转换-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--测试缓存对于分页数据影响-->
+        <!--<setting name="cacheEnabled" value="false"/>-->
+    </settings>
+    <plugins>
+        <plugin interceptor="cn.lger.mybatis.plugin.PagePlugin">
+            <!--这里可以自定义分页SQL工厂-->
+            <!--<property name="pageSqlFactory" value="cn.lger.plugin.dao.MyPageSqlFactory"/>-->
+            <property name="pageSqlFactory" value="cn.lger.mybatis.plugin.factory.MySqlPageSqlFactory"/>
+        </plugin>
+    </plugins>
+</configuration>
