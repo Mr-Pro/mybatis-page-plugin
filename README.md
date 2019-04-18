@@ -1,7 +1,9 @@
 # mybatis-page-plugin
 MyBatis 分页插件，通过MyBatis 过滤器实现，开发时采用版本为`3.4.4`
+[jar包地址](https://github.com/Mr-Pro/mybatis-page-plugin/releases/tag/1.0.1.RELEASE)
 
 # 说明
+
 
 ### MyBatis 配置
 ```xml
